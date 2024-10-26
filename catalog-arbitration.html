@@ -81,7 +81,7 @@
 							</li>
 						</ul>
 					</nav>
-					<a href="#" class="header__btn btn btn--md">Бесплатная консультация</a>
+					<a href="#" class="header__btn btn btn--md modal-btn" data-id="modal-consultation">Бесплатная консультация</a>
 					<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
 						<span class="hamburger__inner"></span>
 						<span class="hamburger__inner"></span>
@@ -418,6 +418,29 @@
 		</div>
 	</div>
 	<!-- end of menu -->
+	<!-- modals -->
+	<div class="modal" id="modal-consultation">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<button class="modal__close-btn modal__close" aria-label="Закрыть">
+					<svg class="modal__close-icon">
+						<use xlink:href="img/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<span class="modal__heading">Заполните форму и получите бесплатную консультацию</span>
+				<form action="#" class="modal-form modal__form">
+					<div class="modal-form__inner">
+						<div class="input-field modal-form__input">
+							<input type="tel" class="input-field__input" placeholder="Телефон" data-inputmask="'mask': '+7 (999) 999-99-99'">
+						</div>
+						<button class="modal-form__btn btn">Отправить заявку</button>
+					</div>
+					<p class="modal-form__copyright">Нажимая на кнопку, соглашаюсь с <a href="#">политикой конфиденциальности</a> <br>и <a href="#">пользовательским соглашением</a></p>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- end of modals -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
